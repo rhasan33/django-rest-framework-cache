@@ -49,7 +49,7 @@ from rest_framework_cache.registry import cache_registry
 from .models import Comment
 
 
-class CommentSerializer(serializers.ModelSerializer, CachedSerializerMixin):
+class CommentSerializer(CachedSerializerMixin):
 
     class Meta:
         model = Comment
